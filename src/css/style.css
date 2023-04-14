@@ -762,6 +762,13 @@ section {
     padding-bottom: var(--medida-6);
 }
 
+.button-eduplay {
+    background: #18BAED;
+    border: 3px solid #18BAED;
+    border-radius: 2px;
+    color: var(--bor-branco);
+}
+
 .title-h2 {
     font-family: var(--fonte-titulos);
     font-weight: 400;
@@ -1018,7 +1025,7 @@ section {
         max-width: calc(542px - 1rem*2);
     }
 
-    .hero, .aboutme, .title-large, .hability-knowledge, .accordion-hardskills, .container-contact {
+    .hero, .aboutme, .title-large, .hability-knowledge, .accordion-hardskills, .container-contact, .case-bg {
         justify-items: center;
         padding-top: var(--medida-7);
         padding-bottom: var(--medida-7);
@@ -1056,6 +1063,35 @@ section {
 
     .ul-contact, .container-contact {
         width: -webkit-fill-available;
+    }
+
+    /* case */
+
+    .case-bg {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        background: #ABE4F7;
+    }
+
+    .case-column1 {
+        background: none;
+        border: none;
+        height: auto;
+        padding: var(--medida-4);
+    }
+
+    .case-column2 {
+        background: none;
+    }
+
+    .tag-case {
+        color: var(--cor-gray900);
+    }
+
+    .android-eduplay {
+        position: relative;
+        height: inherit;
     }
 
     .small-span-0 {
