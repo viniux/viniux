@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
-    <link rel="icon" type="image/svg" href="/img/favicon.svg">
+    <link rel="icon" type="image/svg" href="src/img/favicon.svg">
     <title>Vinicius Santos ─ UX Designer</title>
     <meta name="description" content="Esse é meu site provisório, o meu novo site está saindo do forno e logo estará disponível. Sou UX Designer com ênfase em acessibilidade digital, projeto soluções para que todas as pessoas tenham uma experiência equivalente.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="css/provisorio.style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="src/css/style.css" type="text/css" media="all">
 
     <meta property="og:site_name" content="Vinicius Santos ─ UX Designer">
-    <meta property="og:image" content="https://viniux.com/img/viniux-share.png">
+    <meta property="og:image" content="src/img/viniux-share.png">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -22,10 +22,12 @@
     <link rel=”canonical” href=”https://viniux.com”>
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BHQ0881S9Y"></script>
+    <script src="https://kit.fontawesome.com/37ae24c0f8.js" crossorigin="anonymous"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -36,52 +38,218 @@
 </head>
 
 <body class="h-100">
-    <header>
+    <header class="header">
         <div class="grid-container medium-span-12">
-            <img src="img/logo-viniux.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini envolta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
+            <img src="src/img/logo-viniux_black.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini envolta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
         </div>
     </header>
-
-    <main>
-        <section class="grid-container banner-provisorio mt-4 py-2 mb-4 large-full">
-            <div class="large-span-12 txt-banner-provisorio">
-                Este site ainda é provisório. Estou construindo um novo site. :)
+    <!-- Banner provisório 
+    <section class="banner-provisorio py-2">
+        <div class="grid-container">
+            <div class="large-span-12">
+                Este site ainda é provisório. Estou construindo um novo.
             </div>
-        </section>
-        <section class="grid-container hero">
-            <div class="large-span-7 small-span-12">
-                <h1>Vinicius Santos</h1>
-                <p>Sou profissional em Design de experiência do usuário com ênfase em acessibilidade digital. Crio produtos focados em design inclusivo e acessível através de interfaces Web e Mobile, com pesquisas e testes com usuários, para que todas as pessoas possam ter uma experiência equivalente. Atuo no squad de Design da Arcadis, empresa de soluções sustentáveis de design, engenharia e consultoria para ativos naturais e construídos.</p>
-                <p>Durante o ano de 2021 participei da criação do Eduplay, uma solução para que jovens e adolescentes pudessem desenvolver seus estudos fora da sala de aula.</p><p>Acesse um resumo de como foi desenvolver esse projeto :).</p>
-                <div class="hero-button py-4">
-                    <a class="button-outline" href="https://viniux.com/pdf/cv_vinicius-santos.pdf" target="_blank">Currículo <span class="material-symbols-outlined">open_in_new</span></a>
-                    <a href="https://medium.com/@viniux/como-tornar-os-estudos-dos-jovens-mais-din%C3%A2micos-e-divertidos-cae2f14b3a6b" target="_blank">Projeto no medium <span class="material-symbols-outlined">open_in_new</span></a>
+        </div>
+    </section>
+    -->
+    <main>
+        <section class="about" id="about">
+            <div class="grid-container hero">
+                <div class="large-span-7 small-span-12 hero-column">
+                    <div class="title-h2">🔥 Transformando ideias em experiências incríveis.</div>
+                    <h1>Projetando soluções para todas as pessoas.</h1>
+                    <div class="large-span-7 hero-button">
+                        <a class="button-outline" href="https://viniux.com/pdf/cv_vinicius-santos.pdf" target="_blank">Abrir Currículo <span class="material-symbols-outlined">open_in_new</span></a>
+                        <a href="https://medium.com/@viniux/como-tornar-os-estudos-dos-jovens-mais-din%C3%A2micos-e-divertidos-cae2f14b3a6b" target="_blank">Conhecer Projetos <span class="material-symbols-outlined">arrow_right_alt</span></a>
+                    </div>
+                </div>
+                <div class="large-span-4 small-span-12 hero-image" id="hero-image">
+                    <img class="img-hero" src="src/img/img-vinicius.png" alt="Fotografia de Vinicius. Vinicius é uma pessoa homem branca, possuí cabelo castanho curto com as laterais raspadas, barba curta em tom castanho. A fotografia mostra o rosto e um pouco dos ombros, Vinicius utiliza uma camisa toda preta, está com um sorriso para a câmera. O fundo da fotografia é apenas na cor roxa.">
+                </div>
+                <div class="btn-social">
+                    <div><i class="fa-brands fa-linkedin"></i></div>
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <div><i class="fa-brands fa-medium"></i></div>
+                    <!-- <div><i class="fa-brands fa-instagram"></i></div> -->
                 </div>
             </div>
-            <div class="large-span-4 small-span-12 img-hero">
-                <img src="img/vinicius-santos.png" class="img-fluid" alt="Fotografia de Vinicius. Vinicius é uma pessoa homem branca, possuí cabelo castanho curto com as laterais raspadas, barba curta em tom castanho. A fotografia mostra o rosto e um pouco dos ombros, Vinicius utiliza uma camisa toda preta, está com um sorriso para a câmera. O fundo da fotografia é apenas na cor roxa.">
+            <div class="grid-container aboutme">
+                <div class="large-span-7">
+                    <div class="title-h2">😉 Sobre mim</div>
+                    <h2>Mas afinal, quem sou eu?</h2>
+                    <div>
+                        <p class="paragraph">
+                            Me chamo Vinicius, mas pode me chamar de Vini. Sou um UX Designer que se dedica a todas as etapas do double diamond, indo além do UI Design. Cursei um programa focado em Experiência do Usuário pela Digital House, onde desenvolvi o Eduplay, um aplicativo que utiliza gamificação para auxiliar jovens nos estudos, resultado de pesquisas e entrevistas com usuários reais.
+                        </p>
+                        <p class="paragraph">
+                            Atualmente, na Arcadis, trabalho em equipe na criação de soluções digitais para diversos clientes, utilizando pesquisas para identificar problemas, desenvolvendo soluções aplicáveis e realizando testes com usuários. Meu objetivo é sempre criar experiências únicas e satisfatórias para todos os usuários.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <!--
-            <div>
-                <div>instagram</div>
-                <div>linkedin</div>
-                <div>email</div>
-                <div>medium</div>
-            </div>
-            -->
         </section>
-        <section class="grid-container mt-4">
-            <div class="large-span-12 link-social mt-5">
-                <p>Podemos conversar atráves do meu email: <a href="mailto:me@viniux.com">me@viniux.com</a><br>
-                ou se preferir você pode me encontrar no <a href="https://linkedin.com/in/viniciusasantos/">Linkedin <span class="material-symbols-outlined">open_in_new</span></a> e no 
-                <a href="https://medium.com/@viniux/">Medium <span class="material-symbols-outlined">open_in_new</span></a>
-                </p>
+        <section class="project" id="project">
+            <div class="grid-container title-large">
+                <div class="large-span-7">
+                    <div class="title-h2">📂 Projetos</div>
+                    <h2>Aplicativo do Eduplay.</h2>
+                </div>
+            </div>
+            <div class="grid-container container-center">
+                <div class="large-span-10 case-bg">
+                    <div class="case-column1 large-span-4">
+                        <div class="case-column1_content">
+                            <div class="mt-6 mb-6">
+                                <span class="tag-case">UX Design</span>
+                                <h3>Criação do Eduplay.</h3>
+                                <p>Um aplicativo que auxilia o estudo de jovens e adolescentes.</p>
+                            </div>
+                            <div><a href="https://medium.com/@viniux/como-tornar-os-estudos-dos-jovens-mais-dinâmicos-e-divertidos-cae2f14b3a6b" target="_blank">Ler sobre o projeto</a></div>
+                        </div>
+                    </div>
+                    <div class="case-column2 large-span-6">
+                        <img class="android-eduplay" src="src/img/android-eduplay.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hability" id="hability">
+            <div class="grid-container hability-knowledge">
+                <div class="large-span-6">
+                    <div class="title-h2">🔥 Habilidades e conhecimentos</div>
+                    <h2>Conheça um pouco as atividades que eu mais domino.</h2>
+                    <div>
+                        <p>Para oferecer soluções eficientes e inovadoras em design de interfaces, é preciso dominar diversas habilidades e ferramentas. E é justamente isso que eu faço.</p>
+                        <p>Como UX Designer, utilizo o Figma para criar interfaces intuitivas e de alta fidelidade, aplicando práticas de acessibilidade para tornar o produto digital inclusivo e acessível a todos. Além disso, mapeio a jornada do usuário e realizo testes de usabilidade para identificar pontos de melhoria e garantir uma experiência satisfatória.</p>
+                        <p> E tudo isso é embasado em pesquisas e análises de dados, que me ajudam a compreender as necessidades e preferências dos usuários. Se você busca um profissional completo em UX Design, que domina todas essas atividades e muito mais, você está no lugar certo.</p>
+                    </div>
+                </div>
+                <div class="large-span-6 accordion-hardskills">
+                    <!--https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/-->
+                    <div class="AccordionGroup">
+                        <dl class="hardskills">
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc1" id="accordion1"><span class="accordion-title"> Pesquisas e Entrevistas com Usuários<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc1" role="region" aria-labelledby="accordion1" hidden=""><p>Como UX Designer, meu principal objetivo é criar soluções que atendam às necessidades e expectativas dos usuários. Por isso, realizo pesquisas aprofundadas para entender suas necessidades e preferências, buscando melhorias através das dores encontradas.</p><p>Além disso, nas entrevistas, aprofundo a compreensão dos dados extraídos das pesquisas, buscando identificar possíveis pontos de fricção na jornada do usuário. Dessa forma, consigo desenvolver soluções que atendam às necessidades reais dos usuários e garantir uma experiência positiva e satisfatória.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc2" id="accordion2"><span class="accordion-title">Jornada do Usuário<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc2" role="region" aria-labelledby="accordion2" hidden=""><p>Realizo o mapeamento da jornada do usuário em um produto digital para identificar pontos de melhoria e oportunidades de criação de valor. Através de pesquisas e entrevistas com usuários, compreendo toda a sua jornada com o produto ou serviço, identifico pontos de fricção nesse caminho e proponho melhorias através de soluções.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc3" id="accordion3"><span class="accordion-title">Análise de Dados<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc3" role="region" aria-labelledby="accordion3" hidden=""><p>Uso dados quantitativos e qualitativos para informar decisões de design. Esses dados são extraídos principalmente no processo de discovery do double diamond, servindo como base para a elaboração de uma solução. A análise de dados é uma ferramenta poderosa para compreender as necessidades do usuário e criar soluções eficientes.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc4" id="accordion4"><span class="accordion-title">Design Centrado no Usuário<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc4" role="region" aria-labelledby="accordion4" hidden=""><p>Adoto a abordagem de design que coloca as necessidades do usuário no centro do processo de design. Toda a criação é pensada para atender às necessidades do usuário, buscando aprimorar sua experiência e tornar o produto mais eficiente e útil.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc5" id="accordion5"><span class="accordion-title">Arquitetura de Informação<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc5" role="region" aria-labelledby="accordion5" hidden=""><p>Organizo e estruturo conteúdos em sites e aplicativos. Antes da criação de um protótipo, penso cuidadosamente na arquitetura, levando em consideração a jornada do usuário e o fluxo de informações. A arquitetura serve para a organização dos conteúdos de forma concisa, tornando a navegação intuitiva e eficiente.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc6" id="accordion6"><span class="accordion-title">Interfaces<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc6" role="region" aria-labelledby="accordion6" hidden=""><p>Meu foco principal é a criação de interfaces com alta usabilidade e experiência do usuário. Utilizo o Figma para desenvolver protótipos navegáveis e de alta fidelidade, com o handoff pronto para o desenvolvimento. Acredito que a interface deve ser intuitiva e eficiente, facilitando a vida do usuário.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc7" id="accordion7"><span class="accordion-title">Acessibilidade<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc7" role="region" aria-labelledby="accordion7" hidden=""><p>Implemento recursos e práticas que tornam os produtos digitais mais acessíveis a pessoas com diferentes tipos de deficiência. Busco sempre a inclusão de pessoas que, muitas vezes, não conseguem utilizar as plataformas digitais. A acessibilidade é uma preocupação constante em todos os meus projetos.</p>
+                                </div>
+                            </dd>
+                            <dt>
+                                <h3>
+                                    <button type="button" aria-expanded="false" class="AccordionBtn" aria-controls="Acc8" id="accordion8"><span class="accordion-title">Design System<span class="color-point">.</span></span><span class="material-symbols-outlined">expand_more</span></button>
+                                </h3>
+                            </dt>
+                            <dd>
+                                <div class="accordion-panel" id="Acc8" role="region" aria-labelledby="accordion8" hidden=""><p>Crio e mantenho um conjunto de elementos de design padronizados para garantir a consistência e eficiência do processo de design. O design system otimiza o processo de design, facilitando a criação de interfaces e o desenvolvimento do produto. Além disso, garante que a identidade visual do produto seja consistente em todas as telas e funcionalidades.</p>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="grid-container my-contact">
+                <div class="large-span-7">
+                    <div class="title-h2">🫱🏻‍🫲🏾 Vamos conversar</div>
+                    <h2>Meus contatos</h2>
+                    <div>
+                        <p>Se você é um recrutador em busca de um profissional talentoso para a sua equipe, ou um cliente interessado em contratar um UX Designer para um projeto específico, não hesite em me contatar.</p>
+                        <p>Estou aqui para oferecer soluções personalizadas para atender às necessidades dos usuários, com um foco especial na melhoria de experiência e na acessibilidade. Estarei sempre pronto para trabalhar em projetos que possam mudar a vida dos usuários finais.</p>
+                        <p>Vamos bater um papo, tenho certeza que tem algo a me dizer. :)</p>
+                    </div>
+                </div>
+                <div class="large-span-5">
+                    <ul class="ul-contact">
+                        <li class="card-mycontact"><a href="mailto:me@viniux.com">
+                            <span class="material-symbols-outlined">outgoing_mail</span>
+                            <span class="card-mycontactText"><span class="card-mycontactTextBold">Enviar email</span>me@viniux.com</span>
+                            <span class="material-symbols-outlined">east</span></a>
+                        </li>
+                        <li class="card-mycontact"><a href="https://api.whatsapp.com/send?phone=5511988579389">
+                            <span class="material-symbols-outlined">phone_forwarded</span>
+                            <span class="card-mycontactText"><span class="card-mycontactTextBold">Mandar um WhatsApp</span>+55 (11) 98857-9389</span>
+                            <span class="material-symbols-outlined">east</span></a>
+                        </li>
+                        <li class="card-mycontact"><a href="https://www.linkedin.com/in/viniciusasantos">
+                            <span class="material-symbols-outlined">open_in_new</span>
+                            <span class="card-mycontactText"><span class="card-mycontactTextBold">Visitar perfil no Linkedin</span>/in/viniciusasantos</span>
+                            <span class="material-symbols-outlined">east</span></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="large-span-12 txt-footer large-full">Criado por Vinicius Santos</div>
+    <footer class="footer" id="footer">
+        <div class="large-span-12"><img class="img-design-by" src="src/img/design-by_footer-white.svg" alt="Representa a seguinte frase em inglês: Design BY (Na tradução seria: Desenho feito por), e abaixo a Logo de ViniUX"></div>
+        <div class="large-span-12 txt-footer large-full">© 2023 todos os direitos reservados.</div>
     </footer>
+
+    <script src="src/js/accordion.js"></script>
+    <script src="src/js/scroll-img.js"></script>
+    <!--
+     
+    <script src="src/js/scroll-img_complemento.js"></script>
+    <script src="src/js/fixed-header.js"></script>-->
+    
 </body>
 
 
