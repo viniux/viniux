@@ -39,8 +39,18 @@
 
 <body class="h-100">
     <header class="header">
-        <div class="grid-container medium-span-12">
-            <img src="src/img/logo-viniux_black.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini envolta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
+        <div class="grid-container container-header">
+            <div class="large-span-2">
+                <img src="src/img/logo-viniux_black.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini envolta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
+            </div>
+            <nav class="large-span-10">
+                <ul>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#project">Meus Projetos</a></li>
+                    <li><a href="#hability">Conhecimentos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- Banner provisório 
@@ -60,13 +70,13 @@
                     <h1>Projetando soluções para todas as pessoas.</h1>
                     <div class="large-span-7 hero-button">
                         <a class="button-outline" href="https://viniux.com/pdf/cv_vinicius-santos.pdf" target="_blank">Abrir Currículo <span class="material-symbols-outlined">open_in_new</span></a>
-                        <a href="https://medium.com/@viniux/como-tornar-os-estudos-dos-jovens-mais-din%C3%A2micos-e-divertidos-cae2f14b3a6b" target="_blank">Conhecer Projetos <span class="material-symbols-outlined">arrow_right_alt</span></a>
+                        <a href="#project">Conhecer Projetos <span class="material-symbols-outlined">arrow_right_alt</span></a>
                     </div>
                 </div>
                 <div class="large-span-4 small-span-12 hero-image" id="hero-image">
                     <img class="img-hero" src="src/img/img-vinicius.png" alt="Fotografia de Vinicius. Vinicius é uma pessoa homem branca, possuí cabelo castanho curto com as laterais raspadas, barba curta em tom castanho. A fotografia mostra o rosto e um pouco dos ombros, Vinicius utiliza uma camisa toda preta, está com um sorriso para a câmera. O fundo da fotografia é apenas na cor roxa.">
                 </div>
-                <div class="btn-social">
+                <div class="btn-social small-span-12">
                     <div><i class="fa-brands fa-linkedin"></i></div>
                     <div><i class="fa-solid fa-envelope"></i></div>
                     <div><i class="fa-brands fa-medium"></i></div>
@@ -74,7 +84,7 @@
                 </div>
             </div>
             <div class="grid-container aboutme">
-                <div class="large-span-7">
+                <div class="large-span-7 small-span-12">
                     <div class="title-h2">😉 Sobre mim</div>
                     <h2>Mas afinal, quem sou eu?</h2>
                     <div>
@@ -90,13 +100,13 @@
         </section>
         <section class="project" id="project">
             <div class="grid-container title-large">
-                <div class="large-span-7">
+                <div class="large-span-7 small-span-12">
                     <div class="title-h2">📂 Projetos</div>
                     <h2>Aplicativo do Eduplay.</h2>
                 </div>
             </div>
             <div class="grid-container container-center">
-                <div class="large-span-10 case-bg">
+                <div class="large-span-10 case-bg small-span-12">
                     <div class="case-column1 large-span-4">
                         <div class="case-column1_content">
                             <div class="mt-6 mb-6">
@@ -115,7 +125,7 @@
         </section>
         <section class="hability" id="hability">
             <div class="grid-container hability-knowledge">
-                <div class="large-span-6">
+                <div class="large-span-6 small-span-12">
                     <div class="title-h2">🔥 Habilidades e conhecimentos</div>
                     <h2>Conheça um pouco as atividades que eu mais domino.</h2>
                     <div>
@@ -124,7 +134,7 @@
                         <p> E tudo isso é embasado em pesquisas e análises de dados, que me ajudam a compreender as necessidades e preferências dos usuários. Se você busca um profissional completo em UX Design, que domina todas essas atividades e muito mais, você está no lugar certo.</p>
                     </div>
                 </div>
-                <div class="large-span-6 accordion-hardskills">
+                <div class="large-span-6 accordion-hardskills small-span-12">
                     <!--https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/-->
                     <div class="AccordionGroup">
                         <dl class="hardskills">
@@ -207,7 +217,7 @@
         </section>
         <section class="contact" id="contact">
             <div class="grid-container my-contact">
-                <div class="large-span-7">
+                <div class="large-span-7 small-span-12">
                     <div class="title-h2">🫱🏻‍🫲🏾 Vamos conversar</div>
                     <h2>Meus contatos</h2>
                     <div>
@@ -216,7 +226,7 @@
                         <p>Vamos bater um papo, tenho certeza que tem algo a me dizer. :)</p>
                     </div>
                 </div>
-                <div class="large-span-5">
+                <div class="container-contact large-span-5 small-span-12">
                     <ul class="ul-contact">
                         <li class="card-mycontact"><a href="mailto:me@viniux.com">
                             <span class="material-symbols-outlined">outgoing_mail</span>
@@ -245,6 +255,7 @@
 
     <script src="src/js/accordion.js"></script>
     <script src="src/js/scroll-img.js"></script>
+    <script src="src/js/nav.js"></script>
     <!--
      
     <script src="src/js/scroll-img_complemento.js"></script>

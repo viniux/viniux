@@ -506,8 +506,46 @@ header {
     width: 100%;
 }
 
+.container-header {
+    width: -webkit-fill-available;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    width: auto;
+}
+
+nav ul li a {
+    font-family: var(--fonte-peso-bold);
+    font-size: 1rem;
+    color: var(--cor-gray900);
+    padding: .8rem .5rem;
+    background: none;
+    border: none;
+}
+
+nav ul li a:hover {
+    border: 0.3px solid #0A0A0A;
+}
+
+nav ul li a:focus {
+    color: var(--cor-gray900);
+    background: #FAD498;
+    border: 2px solid var(--cor-gray900);
+    outline: 2px dashed var(--cor-gray900);
+    outline-offset: .25rem;
+    box-shadow: none
+}
+
 .header-logo {
-    width: 9rem;
+    height: 3rem;
 }
 
 .grid-container {
@@ -804,8 +842,17 @@ section {
     color: var(--cor-gray900);
 }
 
-.card-mycontact a:hover .material-symbols-outlined {
+.card-mycontact a:hover .material-symbols-outlined, .card-mycontact a:focus .material-symbols-outlined {
     color: var(--cor-gray900);
+}
+
+.card-mycontact a:focus {
+    color: var(--cor-gray900);
+    background: #FAD498;
+    border: 4px solid var(--cor-primaria);
+    outline: 2px dashed var(--cor-primaria);
+    outline-offset: .25rem;
+    box-shadow: none
 }
 
 .card-mycontact .material-symbols-outlined {
@@ -851,10 +898,7 @@ section {
 
 /* Sessão Habilidades e Conhecimentos */
 
-    .hability-knowledge {
-        justify-items: end;
-    }
-
+    
     .hability {
         background: #FAD49880;
         padding-top: var(--medida-7);
@@ -896,6 +940,7 @@ section {
         font-weight: 700;
         font-size: 1.5rem;
         line-height: 115%;
+        text-align: left;
     }
 
     .AccordionBtn .material-symbols-outlined {
@@ -973,12 +1018,27 @@ section {
         max-width: calc(542px - 1rem*2);
     }
 
+    .hero, .aboutme, .title-large, .hability-knowledge, .accordion-hardskills, .container-contact {
+        justify-items: center;
+        padding-top: var(--medida-7);
+        padding-bottom: var(--medida-7);
+    }
+
     .hero-button {
         flex-direction: column;
     }
 
+    .btn-social {
+        flex-direction: row;
+        justify-content: center;
+    }
+
     button, a {
         width: max-content;
+    }
+
+    .hero-image {
+        width: -webkit-fill-available;
     }
 
     .img-hero {
@@ -987,10 +1047,15 @@ section {
         justify-content: center;
         flex-wrap: wrap;
         align-items: flex-start;
+        width: -webkit-fill-available;
     }
 
     .img-fluid {
         max-width: 80%;
+    }
+
+    .ul-contact, .container-contact {
+        width: -webkit-fill-available;
     }
 
     .small-span-0 {
