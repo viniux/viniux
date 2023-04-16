@@ -769,6 +769,29 @@ section {
     color: var(--bor-branco);
 }
 
+.button-eduplay {
+    background: #18BAED;
+    border: 3px solid #18BAED;
+    border-radius: 2px;
+    color: var(--bor-branco);
+}
+
+.button-eduplay:hover {
+    color: #18BAED;
+    border: 3px solid #18BAED;
+    background: var(--bor-branco);
+    text-decoration: none
+}
+
+.button-eduplay:focus {
+    color: var(--bor-branco);
+    background: var(--cor-texto-preto);
+    border: 4px solid var(--cor-texto-preto);
+    outline: 2px dashed var(--cor-texto-preto);
+    outline-offset: .25rem;
+    box-shadow: none
+}
+
 .title-h2 {
     font-family: var(--fonte-titulos);
     font-weight: 400;
@@ -799,6 +822,26 @@ section {
     gap: 1.5rem;
     width: fit-content;
 }
+
+.btn-social-icon {
+    background: none;
+    border: none;
+}
+
+.btn-social-icon:hover {
+    border: .2px solid #0A0A0A;
+    background-color: #FAD498;
+}
+
+.btn-social-icon:focus {
+    color: var(--cor-gray900);
+    background: #FAD498;
+    border: 2px solid var(--cor-gray900);
+    outline: 2px dashed var(--cor-gray900);
+    outline-offset: .25rem;
+    box-shadow: none;
+}
+
 
 /* Section Contact */
 
@@ -902,6 +945,10 @@ section {
 .img-design-by {
     width: 120px;
 }
+
+/* ScrollTriguer */
+
+    
 
 /* Sessão Habilidades e Conhecimentos */
 
