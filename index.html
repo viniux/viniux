@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
-    <link rel="icon" type="image/svg" href="src/img/favicon.svg">
+    <link rel="icon" type="image/svg" href="img/favicon.svg">
     <title>Vinicius Santos ─ UX Designer</title>
     <meta name="description" content="Sou um UX Designer que se dedica a todas as etapas do double diamond, indo além do UI Design. Esse portfólio foi desenvolvido inteiramente por mim, me preocupei em cada pedacinho dele para criar um site Acessível e com uma boa experiência.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="src/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 
     <meta property="og:site_name" content="Vinicius Santos ─ UX Designer">
-    <meta property="og:image" content="src/img/viniux-share.png">
+    <meta property="og:image" content="img/viniux-share.png">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -41,18 +41,23 @@
     <header class="header">
         <div class="grid-container container-header">
             <div class="large-span-2">
-                <img src="src/img/logo-viniux_black.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini envolta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
+                <img src="img/logo-viniux_white.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini envolta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
             </div>
-            <!--Nav menu in construction
-            <nav class="large-span-10" aria-labelledby="mainmenulabel">
-                <ul>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#project">Meus Projetos</a></li>
-                    <li><a href="#hability">Conhecimentos</a></li>
-                    <li><a href="#contact">Contatos</a></li>
-                </ul>
+            <nav class="large-span-10 menu-nav" id="primary-nav" aria-label="Main">
+                <button class="menu-hamburguer" id="hamburger" aria-expanded="false">
+                    <span class="material-symbols-outlined menu-defaut" aria-hidden="true">menu</span>
+                    <span>Menu</span>
+                </button>
+                <div class="main-nav">
+                    <ul class="container-nav">
+                        <li><a class="link-nav" href="#about">Sobre mim</a></li>
+                        <li><a class="link-nav" href="#project">Meus Projetos</a></li>
+                        <li><a class="link-nav" href="#hability">Conhecimentos</a></li>
+                        <li><a class="link-nav" href="#contact">Contatos</a></li>
+                        <li class="button-cv"><a class="button-text" href="https://viniux.com/pdf/cv_vinicius-santos.pdf" target="_blank">Abrir Currículo <span class="material-symbols-outlined">open_in_new</span></a></li>
+                    </ul>
+                </div>
             </nav>
-            -->
         </div>
     </header>
     <!-- Banner provisório 
@@ -67,60 +72,61 @@
     <main>
         <section class="about" id="about">
             <div class="grid-container hero">
-                <div class="large-span-7 small-span-12 hero-column">
-                    <div class="title-h2">🔥 Transformando ideias em experiências incríveis.</div>
+                <div class="large-span-7 small-span-12 hero-column-1">
+                    <div class="pretitle"><span aria-hidden="true">🔥 </span>Transformando ideias em experiências incríveis.</div>
                     <h1>Projetando soluções para todas as pessoas.</h1>
-                    <div class="large-span-7 hero-button">
-                        <a class="button-outline" href="https://viniux.com/src/pdf/cv_vinicius-santos.pdf" target="_blank">Abrir Currículo <span class="material-symbols-outlined">open_in_new</span></a>
-                        <a href="#project">Conhecer Projetos <span class="material-symbols-outlined">arrow_right_alt</span></a>
+                    <div class="hero-button">
+                        <a href="#project">Conhecer Projetos <span class="material-symbols-outlined" aria-hidden="true">arrow_right_alt</span></a>
                     </div>
                 </div>
-                <div class="large-span-4 small-span-12 hero-image" id="hero-image">
-                    <img class="img-hero" src="src/img/img-vinicius.png" alt="Fotografia de Vinicius. Vinicius é uma pessoa homem branca, possuí cabelo castanho curto com as laterais raspadas, barba curta em tom castanho. A fotografia mostra o rosto e um pouco dos ombros, Vinicius utiliza uma camisa toda preta, está com um sorriso para a câmera. O fundo da fotografia é apenas na cor roxa.">
+                <div class="small-span-12 hero-image" id="hero-image">
+                    <img class="img-hero" src="img/img-vinicius.png" alt="Fotografia de Vinicius. Vinicius é uma pessoa homem branca, possuí cabelo castanho curto com as laterais raspadas, barba curta em tom castanho. A fotografia mostra o rosto e um pouco dos ombros, Vinicius utiliza uma camisa toda preta, está com um sorriso para a câmera. O fundo da fotografia é apenas na cor roxa.">
+                    <p class="legendphoto">Vinicius Santos | UX Designer</p>
                 </div>
-                <div class="btn-social small-span-12">
+                <div class="btn-social small-span-12" aria-hidden="true">
                     <div><a href="https://www.linkedin.com/in/viniciusasantos/" class="btn-social-icon" target="_blank" aria-hidden="true"><i class="fa-brands fa-linkedin"></i></a></div>
                     <div><a href="mailto:me@viniux.com" class="btn-social-icon" target="_blank" aria-hidden="true"><i class="fa-solid fa-envelope"></i></a></div>
                     <div><a href="https://medium.com/@viniux" class="btn-social-icon" target="_blank" aria-hidden="true"><i class="fa-brands fa-medium"></i></a></div>
                     <!-- <div><i class="fa-brands fa-instagram"></i></div> -->
                 </div>
             </div>
-            <div class="grid-container aboutme">
-                <div class="large-span-7 small-span-12">
-                    <div class="title-h2">😉 Sobre mim</div>
-                    <h2>Mas afinal, quem sou eu?</h2>
-                    <div>
-                        <p class="paragraph">
-                            Me chamo Vinicius, mas pode me chamar de Vini. Sou um UX Designer que se dedica a todas as etapas do double diamond, indo além do UI Design. Cursei um programa focado em Experiência do Usuário pela Digital House, onde desenvolvi o Eduplay, um aplicativo que utiliza gamificação para auxiliar jovens nos estudos, resultado de pesquisas e entrevistas com usuários reais.
-                        </p>
-                        <p class="paragraph">
-                            Atualmente, na Arcadis, trabalho em equipe na criação de soluções digitais para diversos clientes, utilizando pesquisas para identificar problemas, desenvolvendo soluções aplicáveis e realizando testes com usuários. Meu objetivo é sempre criar experiências únicas e satisfatórias para todos os usuários.
-                        </p>
+            <div class="aboutme">
+                <div class="grid-container about-container">
+                    <div class="large-span-7 small-span-12">
+                        <div class="pretitle"><span aria-hidden="true">😉 </span>Sobre mim</div>
+                        <h2>Mas afinal, <span class="color-primary300">quem sou eu?</span></h2>
+                        <div>
+                            <p class="paragraph-highlights">
+                                Me chamo Vinicius, mas pode me chamar de Vini. Sou um UX Designer que se dedica a todas as etapas do double diamond, indo além do UI Design. Cursei um programa focado em Experiência do Usuário pela Digital House, onde desenvolvi o Eduplay, um aplicativo que utiliza gamificação para auxiliar jovens nos estudos, resultado de pesquisas e entrevistas com usuários reais.
+                            </p>
+                            <p class="paragraph-highlights">
+                                Atualmente, na Arcadis, trabalho em equipe na criação de soluções digitais para diversos clientes, utilizando pesquisas para identificar problemas, desenvolvendo soluções aplicáveis e realizando testes com usuários. Meu objetivo é sempre criar experiências únicas e satisfatórias para todos os usuários.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="project" id="project">
-            <div class="grid-container title-large">
+        <section class="project project-eduplay" id="project">
+            <!-- inatived for moment
+            <div class="grid-container">
                 <div class="large-span-7 small-span-12">
                     <div class="title-h2">📂 Projetos</div>
                     <h2>Aplicativo do Eduplay.</h2>
                 </div>
-            </div>
+            </div>-->
             <div class="grid-container container-center">
                 <div class="large-span-10 case-bg small-span-12">
                     <div class="case-column1 large-span-4">
                         <div class="case-column1_content">
-                            <div class="mt-6 mb-6">
-                                <span class="tag-case">UX Design</span>
-                                <h3>Criação do Eduplay.</h3>
-                                <p>Um aplicativo que auxilia o estudo de jovens e adolescentes.</p>
-                            </div>
+                            <span class="tag-case" aria-hidden="true">UX Design</span>
+                            <h2>Criação do Eduplay.</h2>
+                            <p>Um aplicativo que auxilia o estudo de jovens e adolescentes.</p>
                             <a class="button-eduplay" href="https://medium.com/@viniux/como-tornar-os-estudos-dos-jovens-mais-dinâmicos-e-divertidos-cae2f14b3a6b" target="_blank">Ler sobre o projeto</a>
                         </div>
                     </div>
                     <div class="case-column2 large-span-6">
-                        <img class="android-eduplay" src="src/img/android-eduplay.png">
+                        <img class="android-eduplay" src="img/android-eduplay.png">
                     </div>
                 </div>
             </div>
@@ -128,12 +134,14 @@
         <section class="hability" id="hability">
             <div class="grid-container hability-knowledge">
                 <div class="large-span-6 small-span-12">
-                    <div class="title-h2">🔥 Habilidades e conhecimentos</div>
-                    <h2>Conheça um pouco as atividades que eu mais domino.</h2>
-                    <div>
-                        <p>Para oferecer soluções eficientes e inovadoras em design de interfaces, é preciso dominar diversas habilidades e ferramentas. E é justamente isso que eu faço.</p>
-                        <p>Como UX Designer, utilizo o Figma para criar interfaces intuitivas e de alta fidelidade, aplicando práticas de acessibilidade para tornar o produto digital inclusivo e acessível a todos. Além disso, mapeio a jornada do usuário e realizo testes de usabilidade para identificar pontos de melhoria e garantir uma experiência satisfatória.</p>
-                        <p> E tudo isso é embasado em pesquisas e análises de dados, que me ajudam a compreender as necessidades e preferências dos usuários. Se você busca um profissional completo em UX Design, que domina todas essas atividades e muito mais, você está no lugar certo.</p>
+                    <div class="knowledge-content">
+                        <div class="pretitle"><span aria-hidden="true">🔥 </span>Habilidades e conhecimentos</div>
+                        <h2>Conheça um pouco das <span class="color-primary300">minhas habilidades.</span></h2>
+                        <div>
+                            <p>Para oferecer soluções eficientes e inovadoras em design de interfaces, é preciso dominar diversas habilidades e ferramentas. E é justamente isso que eu faço.</p>
+                            <p>Como UX Designer, utilizo o Figma para criar interfaces intuitivas e de alta fidelidade, aplicando práticas de acessibilidade para tornar o produto digital inclusivo e acessível a todos. Além disso, mapeio a jornada do usuário e realizo testes de usabilidade para identificar pontos de melhoria e garantir uma experiência satisfatória.</p>
+                            <p> E tudo isso é embasado em pesquisas e análises de dados, que me ajudam a compreender as necessidades e preferências dos usuários. Se você busca um profissional completo em UX Design, que domina todas essas atividades e muito mais, você está no lugar certo.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="large-span-6 accordion-hardskills small-span-12">
@@ -220,8 +228,8 @@
         <section class="contact" id="contact">
             <div class="grid-container my-contact">
                 <div class="large-span-7 small-span-12">
-                    <div class="title-h2">🫱🏻‍🫲🏾 Vamos conversar</div>
-                    <h2>Meus contatos</h2>
+                    <div class="pretitle"><span aria-hidden="true">🫱🏻‍🫲🏾 </span>Vamos conversar</div>
+                    <h2>Onde me encontrar</h2>
                     <div>
                         <p>Se você é um recrutador em busca de um profissional talentoso para a sua equipe, ou um cliente interessado em contratar um UX Designer para um projeto específico, não hesite em me contatar.</p>
                         <p>Estou aqui para oferecer soluções personalizadas para atender às necessidades dos usuários, com um foco especial na melhoria de experiência e na acessibilidade. Estarei sempre pronto para trabalhar em projetos que possam mudar a vida dos usuários finais.</p>
@@ -251,17 +259,27 @@
         </section>
     </main>
     <footer class="footer" id="footer">
-        <div class="large-span-12"><img class="img-design-by" src="src/img/design-by_footer-white.svg" alt="Representa a seguinte frase em inglês: Design BY (Na tradução seria: Desenho feito por), e abaixo a Logo de ViniUX"></div>
+        <div class="large-span-12"><img class="img-design-by" src="img/design-by_footer-white.svg" alt="Representa a seguinte frase em inglês: Design BY (Na tradução seria: Desenho feito por), e abaixo a Logo de ViniUX"></div>
         <div class="large-span-12 txt-footer large-full">© 2023 todos os direitos reservados.</div>
     </footer>
 
-    <script src="src/js/accordion.js"></script>
-    <script src="src/js/scrolltriguer.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/nav-hamburguer.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    
 
     <!--
-     
-    <script src="src/js/scroll-img_complemento.js"></script>
-    <script src="src/js/fixed-header.js"></script>-->
+    <script src="/js/ScrollSmoother.min.js"></script>
+    -->
+
+
+    <!-- 
+    <script src="js/scroll-img_complemento.js"></script>
+    -->
     
 </body>
 
