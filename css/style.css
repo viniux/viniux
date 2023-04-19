@@ -1249,7 +1249,7 @@ header {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 115%;
     }
 
@@ -1264,18 +1264,18 @@ header {
     }
 
     p {
-        font-size: .875rem;
+        font-size: 1rem;
         line-height: 150%;
     }
 
     .paragraph-highlights {
-        font-size: .875rem;
+        font-size: 1rem;
         line-height: 150%;
         padding-top: var(--medida-4);
     }
 
     .pretitle {
-        font-size: .875rem;
+        font-size: .9rem;
         line-height: 115%;
     }
 
