@@ -540,6 +540,7 @@ button[type=submit]:focus, button[type=submit]:hover, button:focus, a:focus {
 
 .button-outline {
     background-color: transparent;
+    color: var(--cor-primaria);
 }
 
 .button-text {
@@ -587,6 +588,25 @@ button[type=submit]:focus, button[type=submit]:hover, button:focus, a:focus {
 
 .color-primary300 {
     color: var(--cor-primaria300);
+}
+
+/* form */
+
+form {
+    display: flex;
+    gap: 2.5rem;
+}
+
+input {
+    border: 2px solid var(--cor-gray800);
+    border-radius: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Atkinson Hyperlegible';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 /* Font Awesome */
