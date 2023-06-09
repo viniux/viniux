@@ -10,6 +10,13 @@ RewriteRule ^cv\-ux$ "https\:\/\/viniux\.com\/pdf\/cv_vinicius\-santos\-ux\.pdf"
 # Adicione o código abaixo para redirecionar para a pasta "projeto"
 RewriteRule ^projeto/?$ /projeto/index.html [L]
 
+RewriteEngine On
+
+# Remover a extensão .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
 # php -- BEGIN cPanel-generated handler, do not edit
 # Defina o pacote “ea-php74” como a linguagem padrão de programação “PHP”.
 <IfModule mime_module>
