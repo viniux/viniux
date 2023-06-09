@@ -7,9 +7,6 @@ RewriteCond %{HTTP_HOST} ^viniux\.com$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.viniux\.com$
 RewriteRule ^cv\-ux$ "https\:\/\/viniux\.com\/pdf\/cv_vinicius\-santos\-ux\.pdf" [R=301,L]
 
-# Adicione o código abaixo para redirecionar para a pasta "projeto"
-RewriteRule ^projeto/?$ /projeto/index.html [L]
-
 # php -- BEGIN cPanel-generated handler, do not edit
 # Defina o pacote “ea-php74” como a linguagem padrão de programação “PHP”.
 <IfModule mime_module>
