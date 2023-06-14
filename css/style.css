@@ -1511,6 +1511,17 @@ header {
     padding: 4.5rem 0;
     gap: 1.5rem;
 }
+
+/* page not found */
+
+.page-404 {
+    background: var(--cor-gray900);
+}
+
+.page-404 h1 {
+    font-size: 3rem;
+    font-weight: var(--fonte-peso-bold);
+}
     
 @media (max-width:575.98px) {
     
