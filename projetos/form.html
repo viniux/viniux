@@ -70,11 +70,34 @@
                     <form aria-labelledby="test">
                         <fieldset>
                             <legend id="test"><h2>Formulário de teste</h2></legend>
-                            <p>
-                                <label>Como gostaria que te chamasse?<input type=textarea name="name" placeholder="ex: vinicius"></label> 
-                            </p>
-                            <label>Como gostaria que te chamasse?</label>
-                            <input type=textarea name="name" placeholder="ex: vinicius">
+                            <div>
+                                <label for="name">
+                                    Como posso te chamar?
+                                </label>
+                                <div id="name-hint">
+                                    Inserir valor
+                                </div>
+                                <input id="name" name="name" type="text" spellcheck="false" autocomplete="name">
+                            </div>
+                            <div>
+                                <label class="govuk-label" for="email">
+                                    Email
+                                </label>
+                                <div id="email-hint">
+                                    Não usarei o email para envio de span.
+                                </div>
+                                <input id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+                            </div>
+                            <div>
+                                <label for="telephone-number">
+                                    Número de telefone
+                                </label>
+                                <div id="telephone-number-hint">
+                                    Se for um número internacional, favor inserir o código do país.
+                                </div>
+                                <input id="telephone-number" name="telephone-number" type="tel" aria-describedby="telephone-number-hint" autocomplete="tel">
+                            </div>
+                            
                         </fieldset>
                     </form>
                 </div>
