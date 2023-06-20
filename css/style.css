@@ -635,16 +635,93 @@ form {
     gap: 2.5rem;
 }
 
+.form-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 24px;
+    gap: 32px;
+}
+
 input {
-    border: 2px solid var(--cor-gray800);
-    border-radius: 1px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-family: 'Atkinson Hyperlegible';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-family: var(--fonte-padrao);
+    font-weight: var(--fonte-peso-regular);
+    font-size: 1rem;
     line-height: 150%;
+    padding: 15px 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    background: var(--cor-gray900);
+    border-radius: 1px;
+    border: 2px solid var(--cor-gray700);
+    color: var(--cor-gray400);
+}
+
+select {
+    font-family: var(--fonte-padrao);
+    font-weight: var(--fonte-peso-regular);
+    font-size: 1rem;
+    line-height: 150%;
+    padding: 15px 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    background: var(--cor-gray900);
+    border-radius: 1px;
+    border: 2px solid var(--cor-gray700);
+    color: var(--cor-gray400);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.group-label {
+    font-family: var(--fonte-titulos);
+    font-weight: var(--fonte-peso-regular);
+    font-size: .875rem;
+    line-height: 1rem;
+    color: var(--cor-gray100);
+}
+
+.group-hint {
+    font-family: var(--fonte-titulos);
+    font-weight: var(--fonte-peso-regular);
+    font-size: .875rem;
+    line-height: 1rem;
+    color: var(--cor-gray400);
+}
+
+.group-radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+}
+
+.item-radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+}
+
+.item-radio label {
+    font-family: var(--fonte-padrao);
+    font-weight: var(--fonte-peso-regular);
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--cor-gray400);
 }
 
 /* Font Awesome */

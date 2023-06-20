@@ -67,51 +67,61 @@
             <div class="grid-container">
                 <div class="large-span-8 small-span-12">
                     <h1>Exemplo de formulário</h1>
-                    <form aria-labelledby="test">
-                        <div>
-                            <label for="name">
+                    <form class="form-vertical" aria-labelledby="test">
+                        <div class="form-group">
+                            <label class="group-label" for="name">
                                 Como posso te chamar?
                             </label>
-                            <div id="name-hint">
+                            <div class="group-hint" id="name-hint">
                                 Inserir valor
                             </div>
                             <input id="name" name="name" type="text" spellcheck="false" autocomplete="name">
                         </div>
-                        <div>
-                            <label class="govuk-label" for="email">
+                        <div class="form-group">
+                            <label class="group-label" for="email">
                                 Email
                             </label>
-                            <div id="email-hint">
+                            <div class="group-hint" id="email-hint">
                                 Não usarei o email para envio de span.
                             </div>
                             <input id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
                         </div>
-                        <div>
-                            <label for="telephone-number">
+                        <div class="form-group">
+                            <label class="group-label" for="telephone-number">
                                 Número de telefone
                             </label>
-                            <div id="telephone-number-hint">
+                            <div class="group-hint" id="telephone-number-hint">
                                 Se for um número internacional, favor inserir o código do país.
                             </div>
                             <input id="telephone-number" name="telephone-number" type="tel" aria-describedby="telephone-number-hint" autocomplete="tel">
                         </div>
+                        <div class="form-group">
+                            <label class="group-label" for="dropdown">
+                                Dropdown
+                            </label>
+                            <select>
+                                <option value="one">Opção 1</option>
+                                <option value="two">Opção 2</option>
+                                <option value="three">Opção 3</option>
+                            </select>
+                        </div>
                         <div>
                             <fieldset>
-                                <legend>Label do campo radio</legend>
-                                <div data-module="govuk-radios">
-                                    <div>
+                                <legend class="group-label">Selecione uma opção</legend>
+                                <div class="group-radio" data-module="govuk-radios">
+                                    <div class="item-radio">
                                         <input id="label-do-campo-radio" name="label-do-campo-radio" type="radio" value="opção-1">
                                         <label for="label-do-campo-radio">
                                             Opção 1
                                         </label>
                                     </div>
-                                    <div>
+                                    <div class="item-radio">
                                         <input id="label-do-campo-radio-2" name="label-do-campo-radio" type="radio" value="opção-2">
                                         <label for="label-do-campo-radio-2">
                                             Opção 2
                                         </label>
                                     </div>
-                                    <div>
+                                    <div class="item-radio">
                                         <input id="label-do-campo-radio-3" name="label-do-campo-radio" type="radio" value="opção-3">
                                         <label for="label-do-campo-radio-3">
                                             Opção 3
