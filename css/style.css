@@ -638,9 +638,10 @@ form {
 .form-vertical {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 32px 24px;
     gap: 32px;
+    background: var(--cor-gray800);
 }
 
 input {
@@ -1578,6 +1579,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: var(--cor-gray900);
 }
 
 .highlights-project {
@@ -1588,6 +1590,83 @@ header {
     padding: 4.5rem 0;
     gap: 1.5rem;
 }
+
+    /* Section cases */
+
+    .Proj_cases {
+        display: flex;
+        width: 67.375rem;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 3rem 2.5rem;
+        flex-wrap: wrap;
+    }
+
+    .Proj_CaseCard {
+        display: flex;
+        width: 331px;
+        height: 331px;
+        padding: 24px 16px 16px 16px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        border: none;
+        border-radius: 4px;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 32.81%, rgba(0, 0, 0, 0.00) 100%), url(<path-to-image>), lightgray 50% / contain no-repeat;
+        background-color:  rgba(24, 186, 237, 0.50);
+        box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .Proj_CaseCard:hover {
+        border: 2px solid var(--cor-bg);
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 32.81%, rgba(0, 0, 0, 0.00) 100%), url(<path-to-image>), lightgray 50% / contain no-repeat;
+        background-color:  rgba(24, 186, 237, 0.50);
+    }
+
+    .Proj_Case-RowTag {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+    }
+
+    .Proj_Case-Tag {
+        padding: 4px 6px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 2px;
+        border: 0.5px solid var(--background, #FAFAFD);
+    }
+
+    .Proj_Case-Tag p {
+        color: var(--gray-gray-100, #FAFAFA);
+        font-family: Work Sans;
+        font-size: .75rem;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 0;
+    }
+
+    .Proj_Case-RowTitle {
+        display: flex;
+        padding: 0.5rem 0rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        align-self: stretch;
+    }
+
+    .Proj_Case-RowTitle h2 {
+        color: var(--cor-gray100);
+        font-family: Work Sans;
+        font-size: 1.375rem;
+        font-weight: 500;
+        line-height: 115%;
+        letter-spacing: -0.04125rem;
+    }
 
 /* page not found */
 

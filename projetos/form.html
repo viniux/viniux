@@ -65,7 +65,7 @@
     <main>
         <section class="example-form" id="example-form">
             <div class="grid-container">
-                <div class="large-span-8 small-span-12">
+                <div class="large-span-6 small-span-12">
                     <h1>Exemplo de formulário</h1>
                     <form class="form-vertical" aria-labelledby="test">
                         <div class="form-group">
@@ -75,7 +75,7 @@
                             <div class="group-hint" id="name-hint">
                                 Inserir valor
                             </div>
-                            <input id="name" name="name" type="text" spellcheck="false" autocomplete="name">
+                            <input class="w-100" id="name" name="name" type="text" spellcheck="false" autocomplete="name">
                         </div>
                         <div class="form-group">
                             <label class="group-label" for="email">
@@ -84,7 +84,7 @@
                             <div class="group-hint" id="email-hint">
                                 Não usarei o email para envio de span.
                             </div>
-                            <input id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+                            <input class="w-100" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
                         </div>
                         <div class="form-group">
                             <label class="group-label" for="telephone-number">
@@ -93,13 +93,13 @@
                             <div class="group-hint" id="telephone-number-hint">
                                 Se for um número internacional, favor inserir o código do país.
                             </div>
-                            <input id="telephone-number" name="telephone-number" type="tel" aria-describedby="telephone-number-hint" autocomplete="tel">
+                            <input class="w-100" id="telephone-number" name="telephone-number" type="tel" aria-describedby="telephone-number-hint" autocomplete="tel">
                         </div>
                         <div class="form-group">
                             <label class="group-label" for="dropdown">
                                 Dropdown
                             </label>
-                            <select>
+                            <select class="w-100">
                                 <option value="one">Opção 1</option>
                                 <option value="two">Opção 2</option>
                                 <option value="three">Opção 3</option>
@@ -108,7 +108,7 @@
                         <div>
                             <fieldset>
                                 <legend class="group-label">Selecione uma opção</legend>
-                                <div class="group-radio" data-module="govuk-radios">
+                                <div class="group-radio">
                                     <div class="item-radio">
                                         <input id="label-do-campo-radio" name="label-do-campo-radio" type="radio" value="opção-1">
                                         <label for="label-do-campo-radio">
@@ -129,6 +129,20 @@
                                     </div>
                                 </div>
                             </fieldset>
+                        </div>
+                        <div class="form-group">
+                            <legend class="group-label">Selecione várias opções</legend>
+                            <div class="group-hint" id="checkbox-hint">
+                                Texto de ajuda.
+                            </div>
+                            <div class="group-checkboxes">
+                                <div class="item-checkboxes">
+                                    <input class="input-checkboxes" id="opção 1" name="opção 1" type="checkbox" value="1">
+                                    <label for="opções">
+                                        Opção 1
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
