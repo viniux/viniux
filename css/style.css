@@ -1649,7 +1649,10 @@ header {
 }
 
 .page-project__case--eduplay {
-    background-image: url(img/page-project__case--eduplay.png);
+    background-image: url(https://viniux.com/img/page-project__case--eduplay.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .page-project__case--eduplay:hover {
