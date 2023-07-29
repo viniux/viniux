@@ -30,6 +30,18 @@ body {
     color: var(--cor-gray100);
 }
 
+/* light mode */
+
+.body-light {
+    margin: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1,5rem;
+    background-color: var(--cor-bg);
+    color: var(--cor-gray900);
+}
+
 :root {
     --cor-primaria: #FAB448;
     --cor-primaria200: #FAD498;
@@ -447,6 +459,10 @@ body {
     max-width: calc(100% - 1rem*2) !important;
 }
 
+.align-items--center {
+    align-items: center;
+}
+
 /* Global */
 
 h1 {
@@ -790,7 +806,7 @@ header {
     border-radius: 0;
 }
 
-.menu-nav {
+.header__nav-menu {
     display: grid;
     align-items: center;
     justify-content: end;
@@ -1573,6 +1589,103 @@ header {
         max-width: calc(860px - 1rem*2);
     }
 
+/* V1 Page Project */
+
+.hero-page-project {
+    margin-top: var(--medida-6);
+    margin-bottom: var(--medida-6);
+}
+
+.hero-page-project__title h1 {
+    color: var(--cor-gray900);
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: var(--fonte-peso-regular);
+    line-height: 115%;
+    letter-spacing: -1.44px;
+}
+
+.hero-page-project__title--highlight {
+    color: var(--cor-gray900);
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-weight: var(--fonte-peso-bold);
+    line-height: 115%;
+    letter-spacing: -1.44px;
+}
+
+.hero-page-project__description p {
+    color: var(--cor-gray800);
+    font-family: Atkinson Hyperlegible;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.page-project__case {
+    display: flex;
+    height: 331px;
+    padding: 1.5rem 1rem 1rem 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    background: var(--cor-grayinterface);
+    border: 2px solid transparent;
+}
+
+.page-project__case:hover {
+    background: var(--cor-grayinterface);
+    box-shadow: 3px 3px 8px 0px rgba(96, 127, 158, 0.50);
+    border: 2px solid transparent;
+}
+
+.page-project__case:focus {
+    background: var(--cor-gray900);
+    border: 2px solid var(--cor-grayinterface);
+    outline: 1.9px dashed var(--cor-gray900);
+    outline-offset: 0.18rem;
+    box-shadow: none;
+}
+
+.page-project__case--eduplay {
+    background-image: url(img/page-project__case--eduplay.png);
+}
+
+.page-project__case--eduplay:hover {
+    background-image: url(img/page-project__case--eduplay.png);
+    border: 2px solid #18BAED;
+}
+
+.page-project__case__box-tag {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.page-project__case__box-tag--tag {
+    padding: 4px 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 0.5px solid var(--cor-bg);
+}
+
+
+.page-project__case__box-tag--tag p {
+    color: var(--cor-gray100);
+    font-family: Work Sans;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0;
+}
+
+
 /* Page project */
 
 .hero-project {
@@ -1591,11 +1704,10 @@ header {
     gap: 1.5rem;
 }
 
-    /* Section cases */
+    /* section cases */
 
     .Proj_cases {
         display: flex;
-        width: 67.375rem;
         align-items: flex-start;
         align-content: flex-start;
         gap: 3rem 2.5rem;
@@ -1604,7 +1716,6 @@ header {
 
     .Proj_CaseCard {
         display: flex;
-        width: 331px;
         height: 331px;
         padding: 24px 16px 16px 16px;
         flex-direction: column;
@@ -1624,31 +1735,7 @@ header {
         background-color:  rgba(24, 186, 237, 0.50);
     }
 
-    .Proj_Case-RowTag {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-    }
 
-    .Proj_Case-Tag {
-        padding: 4px 6px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 2px;
-        border: 0.5px solid var(--background, #FAFAFD);
-    }
-
-    .Proj_Case-Tag p {
-        color: var(--gray-gray-100, #FAFAFA);
-        font-family: Work Sans;
-        font-size: .75rem;
-        font-weight: 500;
-        line-height: normal;
-        margin-top: 0;
-    }
 
     .Proj_Case-RowTitle {
         display: flex;
@@ -1729,7 +1816,7 @@ header {
     }
 
     button, a {
-        width: max-content;
+        width: fit-content;
     }
 
     /* Section about */

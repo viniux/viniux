@@ -47,7 +47,7 @@
     </script>
 </head>
 
-<body class="h-100">
+<body class="h-100 body-light">
     <header class="header">
         <div class="grid-container container-header">
             <div class="large-span-2">
@@ -55,7 +55,7 @@
                     <img src="../img/logo-viniux_white.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini em volta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
                 </a>
             </div>
-            <nav class="large-span-10 menu-nav" id="primary-nav" aria-label="Main">
+            <nav class="large-span-10 header__nav-menu" id="primary-nav" aria-label="Main">
                 <button class="menu-hamburguer" id="hamburger" aria-expanded="false">
                     <span class="material-symbols-outlined menu-defaut" aria-hidden="true">menu</span>
                     <span>Menu</span>
@@ -73,29 +73,42 @@
         </div>
     </header>
     <main>
-        <section class="hero-project" id="hero-project">
-            <div class="grid-container">
-                <div class="large-span-9 small-span-12 highlights-project">
-                    <h1>Conheça alguns projetos que <span class="color-primary300">mostram como trabalho.</span></h1>
+        <section class="hero-page-project">
+            <div class="grid-container align-items--center">
+                <div class="large-span-6 small-span-12 hero-page-project__title">
+                    <h1>Conheça alguns projetos que <span class="hero-page-project__title--highlight">mostram como eu trabalho.</span></h1>
+                </div>
+                <div class="large-span-6 small-span-12 hero-page-project__description">
+                    <p>Destaquei alguns projetos marcantes e com grandes resultados assinados por mim.</p>
                 </div>
             </div>
         </section>
         <section>
             <div class="grid-container">
-                <div class="Proj_cases large-span-12 mt-5">
-                    <a href="/projetos/sample-page" class="Proj_CaseCard">
-                        <div class="Proj_Case-RowTag">
-                            <div class="Proj_Case-Tag">
-                                <p>UX Design</p>
-                            </div>
+                <a href="/projetos/sample-page" class="page-project__case page-project__case--eduplay large-span-4 small-span-12">
+                    <div class="page-project__case__box-tag">
+                        <div class="page-project__case__box-tag--tag">
+                            <p>UX Design</p>
                         </div>
-                        <div class="Proj_Case-RowTitle">
-                            <h2>
-                                Eduplay ─ Estudo de jovens mais dinâmico e divertido.
-                            </h2>
+                        <div class="page-project__case__box-tag--tag">
+                            <p>UI Design</p>
                         </div>
-                    </a>
-                </div>
+                        <div class="page-project__case__box-tag--tag">
+                            <p>UX Research</p>
+                        </div>
+                        <div class="page-project__case__box-tag--tag">
+                            <p>Prototype</p>
+                        </div>
+                        <div class="page-project__case__box-tag--tag">
+                            <p>Test</p>
+                        </div>
+                    </div>
+                    <div class="Proj_Case-RowTitle">
+                        <h2>
+                            Eduplay ─ Estudo de jovens mais dinâmico e divertido.
+                        </h2>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
