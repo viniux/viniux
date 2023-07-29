@@ -1624,7 +1624,7 @@ header {
 
 .page-project__case {
     display: flex;
-    height: 331px;
+    height: 321px;
     padding: 1.5rem 1rem 1rem 1rem;
     flex-direction: column;
     justify-content: space-between;
