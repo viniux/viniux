@@ -30,6 +30,10 @@ body {
     color: var(--cor-gray100);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* light mode */
 
 .body-light {
@@ -629,6 +633,14 @@ button[type=submit]:focus, button[type=submit]:hover, button:focus, a:focus {
     padding: .25rem 4.5rem;
     margin: 0 auto;
     max-width: calc(1440px - 1.5rem*2)
+}
+
+.grid-container--row-gap-24 {
+    grid-row-gap: 24px;
+}
+
+.grid-container--column-gap-24 {
+    grid-column-gap: 24px;
 }
 
 .pretitle {
@@ -1631,13 +1643,12 @@ header {
     align-items: center;
     border-radius: 4px;
     background: var(--cor-grayinterface);
-    border: 2px solid transparent;
+    border: none;
 }
 
 .page-project__case:hover {
-    background: var(--cor-grayinterface);
     box-shadow: 3px 3px 8px 0px rgba(96, 127, 158, 0.50);
-    border: 2px solid transparent;
+    border: none;
 }
 
 .page-project__case:focus {
@@ -1649,17 +1660,20 @@ header {
 }
 
 .page-project__case--eduplay {
-    background-image: url(https://viniux.com/img/page-project__case--eduplay.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 32.81%, rgba(0, 0, 0, 0.00) 100%), url(https://viniux.com/img/page-project__case--eduplay.png) no-repeat;
     background-size: cover;
 }
 
 .page-project__case--eduplay:hover {
-    background-image: url(img/page-project__case--eduplay.png);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.80) 32.81%, rgba(0, 0, 0, 0.00) 100%), url(https://viniux.com/img/page-project__case--eduplay.png) no-repeat;
+    background-size: cover;
     border: 2px solid #18BAED;
 }
-
+/*
+.page-project__case--eduplay:hover {
+    transform: scale(1.03);
+}
+*/
 .page-project__case__box-tag {
     display: flex;
     flex-direction: row;
@@ -1769,12 +1783,12 @@ header {
     font-weight: var(--fonte-peso-bold);
 }
     
-@media (max-width:575.98px) {
+@media (max-width:1000.98px) {
     
     /* Global */
 
     .container {
-        max-width: calc(542px - 1rem*2)
+        max-width: calc(100% - 1rem*2)
     }
 
     .grid-container {
@@ -1784,7 +1798,7 @@ header {
         grid-template-columns: repeat(12,minmax(0,1fr));
         padding: 0.25rem 1.5rem;
         margin: 0 auto;
-        max-width: calc(542px - 1rem*2);
+        max-width: calc(100% - 1rem*2);
     }
 
     h1 {
