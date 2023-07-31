@@ -39,23 +39,25 @@
 
 <body class="h-100">
     <header class="header">
-        <div class="grid-container container-header">
-            <div class="large-span-2">
-                <a class="a_back-home" href="https://viniux.com/">
-                    <img src="../img/logo-viniux_white.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini em volta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
+        <div class="grid-container align-items--center justify-items--stretch">
+            <div class="large-span-2 small-span-3">
+                <a class="a__logo-link" aria-label="Navegar para a página inicial" href="https://viniux.com/">
+                    <img src="../img/logo-viniux_white.svg" aria-hidden="true" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini em volta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
                 </a>
             </div>
-            <nav class="large-span-10 menu-nav" id="primary-nav" aria-label="Main">
-                <button class="menu-hamburguer" id="hamburger" aria-expanded="false">
+            <div class="large-span-0 small-span-9 justify-self--self-end">
+                <button class="btn__menu-hamburguer" aria-label="Abrir menu" id="hamburger" aria-expanded="false">
                     <span class="material-symbols-outlined menu-defaut" aria-hidden="true">menu</span>
                     <span>Menu</span>
                 </button>
-                <div class="main-nav">
-                    <ul class="container-nav">
-                        <li><a class="link-nav" href="https://viniux.com/#about">Sobre mim</a></li>
-                        <li><a class="link-nav" href="https://viniux.com/projetos">Meus Projetos</a></li>
-                        <li><a class="link-nav" href="https://viniux.com/#hability">Conhecimentos</a></li>
-                        <li><a class="link-nav" href="https://viniux.com/#contact">Contatos</a></li>
+            </div>
+            <nav class="large-span-9 small-span-8 header__nav-menu" id="nav" aria-label="Main">
+                <div class="nav-menu--expanded small-span-12">
+                    <ul class="nav-menu__container">
+                        <li><a class="link-nav" href="#about">Sobre mim</a></li>
+                        <li><a class="link-nav" href="/projetos">Meus Projetos</a></li>
+                        <li><a class="link-nav" href="#hability">Conhecimentos</a></li>
+                        <li><a class="link-nav" href="#contact">Contatos</a></li>
                         <li class="button-cv"><a class="button-text" href="https://viniux.com/pdf/cv_vinicius-santos.pdf" target="_blank">Abrir Currículo <span class="material-symbols-outlined">open_in_new</span></a></li>
                     </ul>
                 </div>

@@ -49,17 +49,23 @@
 
 <body class="h-100">
     <header class="header">
-        <div class="grid-container container-header">
-            <div class="large-span-2">
+        <div class="grid-container align-items--center justify-items--stretch">
+            <div class="large-span-2 small-span-3">
                 <img src="img/logo-viniux_white.svg" class="header-logo" alt="Logo ViniUX, contendo a escrita: vini em volta de um retângulo. E ao lado do retângulo a escrita: ux e um ponto final."  >
             </div>
-            <nav class="large-span-10 header__nav-menu" id="primary-nav" aria-label="Main">
-                <button class="menu-hamburguer" id="hamburger" aria-expanded="false">
+            <div class="large-span-0 small-span-9 justify-self--self-end">
+                <button class="btn__menu-hamburguer" aria-label="Abrir menu" id="hamburger" aria-expanded="false">
                     <span class="material-symbols-outlined menu-defaut" aria-hidden="true">menu</span>
                     <span>Menu</span>
                 </button>
-                <div class="main-nav">
-                    <ul class="container-nav">
+            </div>
+            <nav class="large-span-9 small-span-8 header__nav-menu" id="nav" aria-label="Main">
+                <!--<button class="btn__menu-hamburguer" id="hamburger" aria-expanded="false">
+                    <span class="material-symbols-outlined menu-defaut" aria-hidden="true">menu</span>
+                    <span>Menu</span>
+                </button>-->
+                <div class="nav-menu--expanded small-span-12">
+                    <ul class="nav-menu__container">
                         <li><a class="link-nav" href="#about">Sobre mim</a></li>
                         <li><a class="link-nav" href="/projetos">Meus Projetos</a></li>
                         <li><a class="link-nav" href="#hability">Conhecimentos</a></li>
@@ -260,16 +266,16 @@
                 </div>
             </div>
         </section>
-    </main>
+    </main> 
     <footer class="footer" id="footer">
         <div class="large-span-12"><img class="img-design-by" src="img/design-by_footer-white.svg" alt="Representa a seguinte frase em inglês: Design BY (Na tradução seria: Desenho feito por), e abaixo a Logo de ViniUX"></div>
         <div class="large-span-12 txt-footer large-full">© 2023 todos os direitos reservados.</div>
-    </footer>
-
+    </footer> 
+    
     <script src="js/accordion.js"></script>
     <script src="js/nav-hamburguer.js"></script>
     <script src="js/custom.js"></script>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     
 </body>

@@ -1,35 +1,17 @@
-// progressive enchancement
-document.body.classList.toggle('js-enabled');
+const btnMobile = document.getElementById('hamburger');
 
-document.addEventListener('DOMContentLoaded', function(event) 
-{
-    let hamburger = document.getElementById('hamburger');
-    // If JS is enabled, it will un-expand the hamburger
-    hamburger.setAttribute('aria-expanded', 'false');
-    hamburger.onclick = function()
-    {   
-        if(this.getAttribute('aria-expanded') == 'false')
-        {
-            this.setAttribute('aria-expanded', 'true');
-        }else{
-            this.setAttribute('aria-expanded', 'false');
-        }
-    }
-});
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
 
-document.addEventListener('click', function(event) {
-    // verifica se o clique foi fora do botão do menu ou do menu em si
-    if (!event.target.closest('#hamburger') && !event.target.closest('.menu')) {
-        // se sim, esconde o menu
-        hamburger.setAttribute('aria-expanded', 'false');
-    }
-});
-
-window.addEventListener('scroll', function(event) {
-    // verifica se o menu está expandido
-    if (hamburger.getAttribute('aria-expanded') == 'true') {
-        // se sim, esconde o menu
-        hamburger.setAttribute('aria-expanded', 'false');
-    }
-});
-  
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
